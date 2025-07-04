@@ -30,6 +30,7 @@ Topic : Ansible
 
 11. Perform zero-downtime rolling updates.
 
+12. Idempotence.
 ----------------------------------------------------------------------------------------
 
                          Commands
