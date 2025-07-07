@@ -1,0 +1,19 @@
+---
+- name: Install the Apache and start the service
+  hosts: all
+  become: true
+  tasks:
+   - name: Install the Apache Server 
+     ansible.builtin.apt:
+      name: apache2
+      state: present
+      update_cache: yes
+
+   - name: Copy index.html file permissions
+     ansible.builtin.copy:
+      src: index.html
+      dest: /var/www/html
+      owner: root
+      group: root
+      mode: 0644
+
