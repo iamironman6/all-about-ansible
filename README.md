@@ -66,13 +66,18 @@ Passwordless Authentication
 
 Inventory File
 
+>> it has IP addresses of managed nodes.
+
+Ansible-Vault
+
 >> 
 
 Ansible-Role Hierarchy Structure
 
+>> 
 
 Ansible-Demo
-----------------
+---------------
 Task 1:
 Create three(3) EC2 instances on AWS using Ansible loops
 
@@ -88,3 +93,4 @@ Automate the shutdown of Ubuntu Instances only using Ansible Conditionals
 
 Hint: Use when condition on ansible gather_facts
  
+-------------------------------------------------
