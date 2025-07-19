@@ -57,6 +57,7 @@ Topic : Ansible
 Passwordless Authentication
 
 >> ssh-copy-id -f "-o IdentityFile <PATH TO PEM FILE>" ubuntu@<INSTANCE-PUBLIC-IP>
+   (ssh-copy-id -f "-o IdentityFile key-pair.pem" ubuntu@54.91.86.193)
 
 >> Copy the public key of controlled node to the target nodes in the ~/.ssh/authorised_keys file.
 
