@@ -77,7 +77,7 @@ Ansible-Vault
    
 2. Add your AWS credentials using the below vault command
     
-   > ansible-vault create/encrypt/derypt group_vars/all/pass.yml --vault-password-file vault.pass
+   > ansible-vault create/encrypt/derypt/edit group_vars/all/pass.yml --vault-password-file vault.pass
 
 Ansible-Role Hierarchy Structure
 
