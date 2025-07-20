@@ -1,0 +1,17 @@
+---
+- name: Enable s3 bucket versioning in aws
+  hosts: localhost
+  gather_facts: false
+
+  tasks:
+    - name: list s3 buckets in aws account
+      amazon.aws.s3_bucket_info:
+      register: result
+    - debug:
+        var: result
+    - name: Enable versioning on s3 buckets 
+      amazon.aws.s3_bucket: 
+        name: "{{ item.name }}"
+        versioning: true
+      loop: "{{ result.buckets }}"  
+      
